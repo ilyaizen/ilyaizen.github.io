@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Contact!"
+title: "About!"
 ---
 
 ## Here we go!
 
-Contact Page
+About Page
 
 Testing 1, 2.
