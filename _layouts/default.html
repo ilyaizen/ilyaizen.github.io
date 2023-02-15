@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-white py-4 px-6">
+      <h1 class="text-2xl font-bold text-gray-800">My Website</h1>
+    </header>
+    <nav class="bg-gray-200 py-2 px-4">
+      <ul class="flex items-center">
+        <li><a class="text-blue-500 hover:text-blue-800" href="#">Home</a></li>
+        <li><a class="text-blue-500 hover:text-blue-800 ml-4" href="#">About</a></li>
+        <li><a class="text-blue-500 hover:text-blue-800 ml-4" href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <main class="px-6 py-4">
+      <p class="text-gray-700">Welcome to my website!</p>
+      {{ content }}
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+        Click me
+      </button>
+    </main>
+    <footer class="bg-gray-300 py-4 px-6 text-gray-600">
+      Copyright &copy; 2023 My Website
+    </footer>
+  </body>
+</html>
